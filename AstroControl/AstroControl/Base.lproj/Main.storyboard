@@ -30,23 +30,72 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exposure Length" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="0rb-3I-qLs" customClass="UITxtNum" customModule="AstroControl" customModuleProvider="target">
-                                <rect key="frame" x="100" y="68" width="174" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mNK-aE-Ox0">
+                                <rect key="frame" x="100" y="68" width="175" height="141"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exposure Length" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="0rb-3I-qLs" customClass="UITxtNum" customModule="AstroControl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Interval" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rl2-qP-CW5" customClass="UITxtNum" customModule="AstroControl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="37" width="175" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Photos" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="uLc-aR-RcD" customClass="UITxtNum" customModule="AstroControl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74" width="175" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delay" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Qqc-47-K5z" customClass="UITxtNum" customModule="AstroControl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="111" width="175" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qx8-5H-G04">
+                                <rect key="frame" x="314" y="606" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aLz-U2-CDe"/>
+                                    <constraint firstAttribute="width" constant="45" id="jgg-fs-Vkr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ia6-2c-4VI" kind="show" id="ehi-F1-eVf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="py3-y9-7Di">
+                                <rect key="frame" x="150" y="217" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.39487906678082191" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mNK-aE-Ox0" firstAttribute="top" secondItem="8b3-y4-K49" secondAttribute="bottom" constant="8" id="1cO-1d-yzH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8b3-y4-K49" secondAttribute="trailing" constant="20" id="7Sf-en-qZi"/>
                             <constraint firstItem="fWR-d8-hT1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JTQ-Ci-4cY"/>
                             <constraint firstItem="fWR-d8-hT1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KBD-P0-UQY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNK-aE-Ox0" secondAttribute="trailing" constant="100" id="ZP9-6X-fe9"/>
                             <constraint firstItem="fWR-d8-hT1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aXD-Or-yYW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qx8-5H-G04" secondAttribute="bottom" constant="16" id="ezS-A8-soq"/>
                             <constraint firstItem="8b3-y4-K49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gyW-b9-iK6"/>
                             <constraint firstItem="fWR-d8-hT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iLv-OR-VTC"/>
                             <constraint firstItem="8b3-y4-K49" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kMt-3M-m4k"/>
+                            <constraint firstItem="mNK-aE-Ox0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="kyP-Fu-Vw9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qx8-5H-G04" secondAttribute="trailing" constant="16" id="sVN-4f-Efp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -54,6 +103,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--HelpVC-->
+        <scene sceneID="qSu-YL-0C2">
+            <objects>
+                <viewController id="Ia6-2c-4VI" customClass="HelpVC" customModule="AstroControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nIO-c3-eNk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImg" translatesAutoresizingMaskIntoConstraints="NO" id="sly-Sh-JGk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AstroControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV6-Nk-Wtm">
+                                <rect key="frame" x="20" y="20" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GAc-0L-NeI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Uam-lO-Dxd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btB-B4-XWp">
+                                <rect key="frame" x="100" y="60" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Dc-qa-zTW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sly-Sh-JGk" firstAttribute="bottom" secondItem="QOb-Ls-eTO" secondAttribute="bottom" id="06m-9S-aCc"/>
+                            <constraint firstItem="SV6-Nk-Wtm" firstAttribute="top" secondItem="QOb-Ls-eTO" secondAttribute="top" id="0LB-vU-cNs"/>
+                            <constraint firstItem="SV6-Nk-Wtm" firstAttribute="leading" secondItem="QOb-Ls-eTO" secondAttribute="leading" constant="20" id="BSz-25-pnp"/>
+                            <constraint firstItem="sly-Sh-JGk" firstAttribute="top" secondItem="nIO-c3-eNk" secondAttribute="top" id="Bge-bT-SzT"/>
+                            <constraint firstItem="btB-B4-XWp" firstAttribute="top" secondItem="SV6-Nk-Wtm" secondAttribute="bottom" id="LxC-Zn-q3T"/>
+                            <constraint firstItem="sly-Sh-JGk" firstAttribute="leading" secondItem="QOb-Ls-eTO" secondAttribute="leading" id="SQN-oJ-u9l"/>
+                            <constraint firstItem="btB-B4-XWp" firstAttribute="leading" secondItem="QOb-Ls-eTO" secondAttribute="leading" constant="100" id="Y5p-MX-mdE"/>
+                            <constraint firstItem="QOb-Ls-eTO" firstAttribute="trailing" secondItem="SV6-Nk-Wtm" secondAttribute="trailing" constant="20" id="cZ0-wN-Xb2"/>
+                            <constraint firstItem="QOb-Ls-eTO" firstAttribute="trailing" secondItem="btB-B4-XWp" secondAttribute="trailing" constant="100" id="fWT-VZ-djA"/>
+                            <constraint firstItem="sly-Sh-JGk" firstAttribute="trailing" secondItem="QOb-Ls-eTO" secondAttribute="trailing" id="vC4-Zt-2ah"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QOb-Ls-eTO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89Y-ZC-dJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="134"/>
         </scene>
     </scenes>
     <resources>
