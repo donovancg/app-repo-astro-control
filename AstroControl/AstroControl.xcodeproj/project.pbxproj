@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C913C930209D40C300C606B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C92F209D40C300C606B5 /* AppDelegate.swift */; };
-		C913C932209D40C300C606B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C931209D40C300C606B5 /* ViewController.swift */; };
+		C913C932209D40C300C606B5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913C931209D40C300C606B5 /* MainVC.swift */; };
 		C913C935209D40C300C606B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C913C933209D40C300C606B5 /* Main.storyboard */; };
 		C913C937209D40C800C606B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C913C936209D40C800C606B5 /* Assets.xcassets */; };
 		C913C93A209D40C800C606B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C913C938209D40C800C606B5 /* LaunchScreen.storyboard */; };
+		C91F19E620A0D89100922571 /* UITxtNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F19E520A0D89100922571 /* UITxtNum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C913C92C209D40C300C606B5 /* AstroControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C913C92F209D40C300C606B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C913C931209D40C300C606B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C913C931209D40C300C606B5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C913C934209D40C300C606B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C913C936209D40C800C606B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C913C939209D40C800C606B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C913C93B209D40C800C606B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91F19E520A0D89100922571 /* UITxtNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITxtNum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		C913C92E209D40C300C606B5 /* AstroControl */ = {
 			isa = PBXGroup;
 			children = (
+				C91F19E420A0D83100922571 /* Controllers */,
+				C91F19E320A0D82400922571 /* Views */,
 				C913C92F209D40C300C606B5 /* AppDelegate.swift */,
-				C913C931209D40C300C606B5 /* ViewController.swift */,
 				C913C933209D40C300C606B5 /* Main.storyboard */,
 				C913C936209D40C800C606B5 /* Assets.xcassets */,
 				C913C938209D40C800C606B5 /* LaunchScreen.storyboard */,
 				C913C93B209D40C800C606B5 /* Info.plist */,
 			);
 			path = AstroControl;
+			sourceTree = "<group>";
+		};
+		C91F19E320A0D82400922571 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C91F19E520A0D89100922571 /* UITxtNum.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C91F19E420A0D83100922571 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C913C931209D40C300C606B5 /* MainVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C913C932209D40C300C606B5 /* ViewController.swift in Sources */,
+				C913C932209D40C300C606B5 /* MainVC.swift in Sources */,
 				C913C930209D40C300C606B5 /* AppDelegate.swift in Sources */,
+				C91F19E620A0D89100922571 /* UITxtNum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
